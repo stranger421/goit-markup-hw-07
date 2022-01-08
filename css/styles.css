@@ -23,6 +23,8 @@ ul li {
   --sec-color: #757575;
   --active-color: #2196f3;
   --icon-color: #afb1b8;
+  --font-color: #fff;
+
   --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -52,7 +54,9 @@ header .container {
   border: 1px solid #ececec;
 }
 
-header .logo {
+.nav__logo {
+  display: flex;
+  justify-content: space-between;
   margin-right: 93px;
   display: flex;
   align-items: center;
@@ -64,18 +68,16 @@ header .logo {
   letter-spacing: 0.03em;
   color: var(--active-color);
 }
-/*  */
 
-/* .links-nav { */
-/* display: inline-block; */
-/* position: relative; */
-/* } */
-
-.color-black {
+.nav__text--black {
   color: var(--main-color);
 }
 
-.active::after {
+.nav__text--white {
+  color: var(--font-color);
+}
+
+.nav__links-header--active::after {
   content: '';
   display: block;
   position: relative;
@@ -87,7 +89,7 @@ header .logo {
 
 /* Контакти */
 
-.links-header {
+.nav__links-header {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -104,11 +106,11 @@ header .logo {
   margin-right: 0;
 }
 
-.links-header:hover,
-.links-header:focus {
+.nav__links-header:hover,
+.nav__links-header:focus {
   color: var(--active-color);
 }
-.link-header-root {
+.contacts__link-header {
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
@@ -118,79 +120,65 @@ header .logo {
   color: #757575;
   margin-right: 30px;
 
+  display: flex;
+  align-items: center;
+
   transition: color 250ms var(--timing-function);
+  transition: fill 250ms var(--timing-function);
 }
 
-.link-header-root:focus,
-.link-header-root:hover {
+.contacts__link-header:focus,
+.contacts__link-header:hover {
   color: var(--active-color);
 }
 
-.link-header-root:focus .icon-envelope,
-.link-header-root:hover .icon-envelope {
-  fill: var(--active-color);
-}
-
-.link-header-root:focus .icon-smartphone,
-.link-header-root:hover .icon-smartphone {
-  fill: var(--active-color);
-}
-
-.icon-mail:last-child {
+.contacts__list:last-child {
   margin-right: 0;
 }
 
-.header-top {
-  align-items: center;
-}
-.contacts list {
-  display: flex;
-  margin-left: auto;
-  align-items: center;
-  vertical-align: center;
-}
-
-.contacts list .icon-mail + .icon-mail {
+.contacts__list {
   display: flex;
   margin-left: 30px;
   justify-content: center;
 }
 
-.link-header-root {
-  display: flex;
+.header-top {
   align-items: center;
 }
+.contacts {
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  align-items: center;
+  vertical-align: center;
+}
 
-.mail-icon {
+.contacts__icon {
   display: inline-block;
   justify-content: center;
   align-items: center;
   margin-right: 10px;
+}
+
+.contacts__icon--email {
   width: 16px;
   height: 12px;
 }
 
-.smartphone {
-  display: inline-block;
-  justify-content: center;
-  align-items: center;
-  margin-right: 10px;
+.contacts__icon--tel {
   width: 10px;
   height: 16px;
 }
 
-.icon-envelope {
-  width: 16px;
-  height: 12px;
+.contacts__svg {
   fill: var(--sec-color);
 }
-.icon-smartphone {
-  fill: var(--sec-color);
-}
-.link-header:hover use,
-.link-header:focus use {
+
+.contacts__link-header:focus .contacts__svg,
+.contacts__link-header:hover .contacts__svg {
   fill: var(--active-color);
 }
+
 /* Герой  */
 .hero {
   padding: 200px 0;
@@ -536,22 +524,6 @@ header .logo {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
   margin-bottom: 10px;
-}
-
-footer .logo {
-  margin-right: 93px;
-  display: flex;
-  align-items: center;
-  font-family: 'Raleway', sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  color: var(--active-color);
-}
-.color-white {
-  color: #fff;
 }
 
 .header-footer {
