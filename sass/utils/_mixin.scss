@@ -1,0 +1,32 @@
+@mixin centered-contect {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@mixin vertical-content {
+  display: flex;
+  align-items: center;
+}
+
+@mixin flex-between {
+  display: flex;
+  justify-content: space-between;
+}
+@mixin centered-position {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin block-relative {
+  display: block;
+  position: relative;
+}
+
+@mixin font-mix($fw: 500, $fs: 14px, $lh: 1.14, $col: var(--main-color)) {
+  font-weight: $fw;
+  font-size: $fs;
+  line-height: $lh;
+  color: $col;
+}

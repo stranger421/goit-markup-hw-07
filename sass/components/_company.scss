@@ -1,0 +1,44 @@
+.flex-company {
+  display: flex;
+  padding-top: 94px;
+  justify-content: center;
+  padding-bottom: 94px;
+  .flex-company__list:not(:last-child) {
+    margin-right: 30px;
+    width: 270px;
+    height: 100;
+  }
+}
+
+.list-card__icon-box {
+  @include centered-position;
+  margin-bottom: 30px;
+  height: 120px;
+  background-color: #f5f4fa;
+  .list-card__svg {
+    @include centered-position;
+    padding: 0;
+    width: 70px;
+    height: 70px;
+  }
+}
+
+.company {
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--main-color);
+  width: 270px;
+  height: 16px;
+  margin-bottom: 10px;
+}
+
+.company-plus {
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--sec-color);
+  box-sizing: border-box;
+  width: 270px;
+  height: 75px;
+}

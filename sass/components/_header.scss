@@ -1,0 +1,109 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #ececec;
+  .header-top {
+    @include centered-contect;
+  }
+}
+.nav {
+  @include flex-between;
+}
+.nav__logo {
+  @include centered-contect;
+  margin-right: 93px;
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--active-color);
+}
+
+.nav__text--black {
+  color: var(--main-color);
+}
+
+.nav__text--white {
+  color: var(--font-color);
+}
+
+.links {
+  display: flex;
+  justify-content: space-between;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.nav__links-header--active::after {
+  content: '';
+  @include block-relative;
+  top: 32px;
+  width: 100%;
+  height: 4px;
+  background-color: var(--active-color);
+}
+
+.nav__links-header {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--main-color);
+  padding: 32px 0;
+  display: inline-block;
+  margin-right: 50px;
+
+  transition: color 250ms var(--timing-function);
+  &:hover,
+  &:focus {
+    color: var(--active-color);
+  }
+}
+
+.contacts {
+  @include centered-position;
+  vertical-align: center;
+  margin-left: auto;
+}
+
+.contacts__link-header {
+  font-family: Roboto;
+  font-style: normal;
+  @include font-mix(500, 14px, 1.14, var(--sec-color));
+  letter-spacing: 0.02em;
+  margin-right: 30px;
+  @include vertical-content;
+  transition: color 250ms var(--timing-function);
+  transition: fill 250ms var(--timing-function);
+  &:focus,
+  &:hover {
+    color: var(--active-color);
+  }
+  .contacts__icon {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+  }
+}
+
+.contacts__list:last-child {
+  margin-right: 0;
+}
+
+.contacts__list {
+  @include vertical-content;
+  margin-left: 30px;
+}
+
+.contacts__svg {
+  fill: var(--sec-color);
+}
+
+.contacts__link-header:focus .contacts__svg,
+.contacts__link-header:hover .contacts__svg {
+  fill: var(--active-color);
+}

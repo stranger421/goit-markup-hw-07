@@ -1,0 +1,19 @@
+// Базовые стили
+@import './base/reset';
+@import './base/_common.scss';
+
+// Переменные и миксины
+@import './utils/_variables.scss';
+@import './utils/mixin';
+
+// Компонентты
+@import './components/header';
+@import './components/hero';
+@import './components/company';
+@import './components/our-work';
+@import './components/our-team';
+@import './components/clients';
+@import './components/footer';
+@import './components/portfolio';
+@import './components/button';
+@import './components/modal-window';
