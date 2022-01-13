@@ -59,7 +59,7 @@ body {
   border: 1px solid #ececec;
 }
 
-.header .header-top {
+.header .header__top {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -85,7 +85,7 @@ body {
           justify-content: space-between;
 }
 
-.nav__logo {
+.logo {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -108,15 +108,15 @@ body {
   color: var(--active-color);
 }
 
-.nav__text--black {
+.logo .logo__text--black {
   color: var(--main-color);
 }
 
-.nav__text--white {
+.logo .logo__text--white {
   color: var(--font-color);
 }
 
-.links {
+.links-header {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -127,11 +127,11 @@ body {
           justify-content: space-between;
 }
 
-.links:last-child {
+.links-header:last-child {
   margin-right: 0;
 }
 
-.nav__links-header--active::after {
+.links-header__link--active::after {
   content: '';
   display: block;
   position: relative;
@@ -141,7 +141,7 @@ body {
   background-color: var(--active-color);
 }
 
-.nav__links-header {
+.links-header__link {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -155,7 +155,7 @@ body {
   transition: color 250ms var(--timing-function);
 }
 
-.nav__links-header:hover, .nav__links-header:focus {
+.links-header__link:hover, .links-header__link:focus {
   color: var(--active-color);
 }
 
@@ -176,7 +176,7 @@ body {
   margin-left: auto;
 }
 
-.contacts__link-header {
+.contacts__link {
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
@@ -201,11 +201,11 @@ body {
   transition: fill 250ms var(--timing-function);
 }
 
-.contacts__link-header:focus, .contacts__link-header:hover {
+.contacts__link:focus, .contacts__link:hover {
   color: var(--active-color);
 }
 
-.contacts__link-header .contacts__icon {
+.contacts__link .contacts__icon {
   display: inline-block;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
@@ -218,11 +218,11 @@ body {
   margin-right: 10px;
 }
 
-.contacts__list:last-child {
+.contacts__item:last-child {
   margin-right: 0;
 }
 
-.contacts__list {
+.contacts__item {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -238,8 +238,8 @@ body {
   fill: var(--sec-color);
 }
 
-.contacts__link-header:focus .contacts__svg,
-.contacts__link-header:hover .contacts__svg {
+.contacts__link:focus .contacts__svg,
+.contacts__link:hover .contacts__svg {
   fill: var(--active-color);
 }
 
@@ -317,7 +317,7 @@ body {
   height: 100;
 }
 
-.list-card__icon-box {
+.list-card__wraper {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -335,7 +335,7 @@ body {
   background-color: #f5f4fa;
 }
 
-.list-card__icon-box .list-card__svg {
+.list-card__wraper .list-card__svg {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -353,7 +353,7 @@ body {
   height: 70px;
 }
 
-.company {
+.list-card__title {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
@@ -364,7 +364,7 @@ body {
   margin-bottom: 10px;
 }
 
-.company-plus {
+.list-card__text {
   font-size: 14px;
   line-height: 1.71;
   color: var(--sec-color);
@@ -436,6 +436,8 @@ body {
 
 .our-team {
   background: #f5f4fa;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .team {
@@ -447,7 +449,7 @@ body {
 
 .team .team__list {
   margin-right: 30px;
-  background: #ffffff;
+  background: var(--font-color);
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   -webkit-border-radius: 0px 0px 4px 4px;
@@ -561,7 +563,7 @@ body {
   margin-right: 30px;
 }
 
-.clients__link {
+.clients-link {
   width: 170px;
   height: 92px;
   display: -webkit-box;
@@ -587,7 +589,7 @@ body {
   transition: fill 250ms var(--timing-function), border 250ms var(--timing-function);
 }
 
-.clients__link:hover, .clients__link:focus {
+.clients-link:hover, .clients-link:focus {
   fill: var(--active-color);
   border: 1px solid var(--active-color);
 }
@@ -602,7 +604,7 @@ body {
   padding-bottom: 60px;
 }
 
-.footer .nav-footer {
+.footer .footer__nav {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;

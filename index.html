@@ -17,18 +17,18 @@
 <body>
     <!-- Шапка -->
     <header class="header">
-        <div class="container header-top">
+        <div class="container header__top">
             <nav class="nav">
-                <a lang="en" href="./index.html" class="nav__logo">Web <span class="nav__text nav__text--black">Studio</span></a>
-                <ul class="links">
-                    <li class="nav__list"> <a href="./index.html" class="nav__links-header nav__links-header--active">Студия</a></li>
-                    <li class="nav__list"> <a href="./portfolio.html" class="nav__links-header">Портфолио</a></li>
-                    <li class="nav__list"> <a href="#" class="nav__links-header">Контакты</a></li>
+                <a lang="en" href="./index.html" class="logo">Web <span class="logo__text logo__text--black">Studio</span></a>
+                <ul class="links-header">
+                    <li class="links-header__item"> <a href="./index.html" class="links-header__link links-header__link--active">Студия</a></li>
+                    <li class="links-header__item"> <a href="./portfolio.html" class="links-header__link">Портфолио</a></li>
+                    <li class="links-header__item"> <a href="#" class="links-header__link">Контакты</a></li>
                 </ul>
             </nav>
             <ul class="contacts">
-                <li class="contacts__list">
-                    <a href="mailto:info@devstudio.com" class="contacts__link-header">
+                <li class="contacts__item">
+                    <a href="mailto:info@devstudio.com" class="contacts__link">
                         <svg class="contacts__icon contacts__icon--email" width="16" height="12">
                             <use class="contacts__svg" href="./images/symbol-defs.svg#icon-envelope"></use>
                         </svg>
@@ -36,7 +36,7 @@
                     </a>
                 </li>
                 <li class="contacts__list">
-                    <a href="tel:+380961111111" class="contacts__link-header">
+                    <a href="tel:+380961111111" class="contacts__link">
                         <svg class="contacts__icon contacts__icon--tel" width="10" height="16">
                             <use class="contacts__svg" href="./images/symbol-defs.svg#icon-smartphone"></use>
                         </svg>
@@ -59,46 +59,46 @@
             <ul class="flex-company">
                 <li class="flex-company__list">
                     <article class="list-card">
-                        <div class="list-card__icon-box">
-                            <svg class="list-card__svg" width="70" height="70">
+                        <div class="list-card__wraper">
+                            <svg class="list-card__icon" width="70" height="70">
                                 <use href="./images/symbol-defs.svg#icon-antenna"></use>
                             </svg>
                         </div>
-                        <h3 class="company">Внимание к деталям</h3>
-                        <p class="company-plus">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
+                        <h3 class="list-card__title">Внимание к деталям</h3>
+                        <p class="list-card__text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
                     </article>
                 </li>
                 <li class="flex-company__list">
                     <article class="list-card">
-                        <div class="list-card__icon-box">
-                            <svg class="list-card__svg" width="70" height="70">
+                        <div class="list-card__wraper">
+                            <svg class="list-card__icon" width="70" height="70">
                                 <use href="./images/symbol-defs.svg#icon-clock"></use>
                             </svg>
                         </div>
-                        <h3 class="company">Пунктуальность</h3>
-                        <p class="company-plus">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
+                        <h3 class="list-card__title">Пунктуальность</h3>
+                        <p class="list-card__text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
                     </article>
                 </li>
                 <li class="flex-company__list">
                     <article class="list-card">
-                        <div class="list-card__icon-box">
-                            <svg class="list-card__svg" width="70" height="70">
+                        <div class="list-card__wraper">
+                            <svg class="list-card__icon" width="70" height="70">
                                 <use href="./images/symbol-defs.svg#icon-diagram"></use>
                             </svg>
                         </div>
-                        <h3 class="company">Планирование</h3>
-                        <p class="company-plus">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
+                        <h3 class="list-card__title">Планирование</h3>
+                        <p class="list-card__text">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
                     </article>
                 </li>
                 <li class="flex-company__list">
                     <article class="list-card">
-                        <div class="list-card__icon-box">
-                            <svg class="list-card__svg" width="70" height="70">
+                        <div class="list-card__wraper">
+                            <svg class="list-card__icon" width="70" height="70">
                                 <use href="./images/symbol-defs.svg#icon-astronaut"></use>
                             </svg>
                         </div>
-                        <h3 class="company">Современные технологии</h3>
-                        <p class="company-plus">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
+                        <h3 class="list-card__title">Современные технологии</h3>
+                        <p class="list-card__text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
                     </article>
                 </li>
             </ul>
@@ -134,7 +134,7 @@
             </ul>
         </section>
         <!-- Наша команда -->
-        <section class="section  our-team">
+        <section class="our-team">
             <div class="container">
                 <h2 class="header-main">Наша команда</h2>
                 <ul class="team">
@@ -290,34 +290,34 @@
                 <h2 class="header-main">Постоянные клиенты</h2>
                 <ul class="clients">
                     <li class="clients__list">
-                        <a href="#" class="clients__link">
-                            <svg width="41" height="47" class="clients__svg">
+                        <a href="#" class="clients-link">
+                            <svg width="41" height="47" class="clients-link__icon">
                                 <use href="./images/symbol-defs.svg#icon-group1" ></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="clients__list"> <a href="#" class="clients__link">
-                        <svg width="40" height="52" class="clients__svg">
+                    <li class="clients__list"> <a href="#" class="clients-link">
+                        <svg width="40" height="52" class="clients-link__icon">
                             <use href="./images/symbol-defs.svg#icon-group2"></use>
                         </svg>
                     </a> </li>
-                    <li class="clients__list"> <a href="#" class="clients__link">
-                        <svg width="43" height="41" class="clients__svg">
+                    <li class="clients__list"> <a href="#" class="clients-link">
+                        <svg width="43" height="41" class="clients-link__icon">
                             <use href="./images/symbol-defs.svg#icon-group3"></use>
                         </svg>
                     </a> </li>
-                    <li class="clients__list"> <a href="#" class="clients__link">
-                        <svg width="85" height="41" class="clients__svg">
+                    <li class="clients__list"> <a href="#" class="clients-link">
+                        <svg width="85" height="41" class="clients-link__icon">
                             <use href="./images/symbol-defs.svg#icon-group4"></use>
                         </svg>
                     </a> </li>
-                    <li class="clients__list"> <a href="#" class="clients__link">
-                        <svg width="63" height="45" class="clients__svg">
+                    <li class="clients__list"> <a href="#" class="clients-link">
+                        <svg width="63" height="45" class="clients-link__icon">
                             <use href="./images/symbol-defs.svg#icon-group5"></use>
                         </svg>
                     </a> </li>
-                    <li class="clients__list"> <a href="#" class="clients__link">
-                        <svg width="94" height="44" class="clients__svg">
+                    <li class="clients__list"> <a href="#" class="clients-link">
+                        <svg width="94" height="44" class="clients-link__icon">
                             <use href="./images/symbol-defs.svg#icon-group6"></use>
                         </svg>
                     </a> </li>    
@@ -327,9 +327,9 @@
     </main>
      <!-- Подвал страници -->
     <footer class="footer">
-        <div class="container nav-footer">
+        <div class="container footer__nav">
             <div class="navigation">
-                <a lang="en" href="./index.html" class="nav__logo">Web<span class="nav__text nav__text--white">Studio</span></a>
+                <a lang="en" href="./index.html" class="logo">Web <span class="logo__text logo__text--white">Studio</span></a>
                 <address class="address">
                     <ul class="address__list">
                         <li class="address__item"><a href="#" class="address__home"> г. Киев, пр-т Леси Украинки, 26</a></li>
